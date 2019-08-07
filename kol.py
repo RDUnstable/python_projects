@@ -87,11 +87,6 @@ def comp_first():
             print("You : ",me,"comp : ",comp)
             comp_first()
 
-
-
-
-
-
 def loop():
     global me
     global comp
