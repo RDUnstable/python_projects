@@ -41,7 +41,12 @@ total_content = list(resp) #The responseobjects are kept n a list
 
 soup = BeautifulSoup(resp.content,'html.parser') #A soup object is created
 
-ch = input("Enter 'link' to find all the links.......'id' to find all id's.................")
+ch = ""
+
+while(ch != 'link'):
+  ch = input("Enter 'link' to find all the links: ")
+  if ch != 'link':
+    print("Please enter 'link'..not ",ch)
 
 links = []
 classes = []
@@ -52,23 +57,37 @@ if ch == 'link':
     t = tag.get('href')
     links.append(t)
   
+  if len(links) == 0:
+    print("No links...............")
+    sys.exit()
+  
   print("Links collected")
   # Here, you have to enter ant word or piece of word and the links containing the word will be displayed
-  f = input("Enter any link realted word you want: ") 
+  f = input("Enter any link realted word you want or enter 'all' to display all the links collected: ") 
   
-  for web in links:
-    if f in web:
-      print(web)
-      selc.append(web)
+  if f == 'all':
+    i = 0
+    for i in range(len(links)):
+      print(links[i])
 
+  else:
+    for web in links:
+      if f in web:
+        print(web)
+        selc.append(web)
+  
+    if len(selc) == 0:
+      print("No linkls found accordng to you r search...........")
+      sys.exit()
+ 
   c = input("Do you want to visit any link?(y/n) ")
   if c == 'y':
     lnk = input("Enter the link here: ")
-    if lnk in selc:
+    if lnk in selc or link in links:
       webbrowser.open(lnk)
 
     else:
-      print("Link is not in list...................")
+      print("Link is not in collection...................")
       sys.exit()
 
   elif c == 'n':
