@@ -1,3 +1,7 @@
+# THIS IS A LITTLE FUNNY GAME WHERE YOU AND YOUR SYSTEM COMPETE TO REACH A TARGET NUMBER(50 IN THIS CASE).IT USES THE RANDOM MODULE OF PYTHON
+# AND RETURNS RANDOM NUMBERS THOSE ADD UP TO REACH THE GOAL :P.......YOU HAVE TO JUST PRESS THE SPECIFIED BUTTON TO MAKE YOUR TURN.
+#.......................................LETS'S TRY IT AND SEE WHO WINS :P.......................................................
+#THIS CODE IS FULLY FUNCTION BASED..............................................................................................
 import random
 import sys
 
