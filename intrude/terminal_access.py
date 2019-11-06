@@ -3,7 +3,7 @@ import sys
 import socket
 import subprocess
 
-host = "192.168.1.100"
+host = "192.168.56.1"
 port = 6666
 
 def server_create():
@@ -64,9 +64,9 @@ def main_task():
     global s
     global conn
     
-    cmnd = input("Write command here: ")
-    send_message(cmnd)
-    a = conn.recv(1024)
+   # cmnd = input("Write command here: ")
+   # send_message(cmnd)
+    a = conn.recv(200000)
     print(a.decode("utf-8"))
     
             
