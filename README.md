@@ -4,3 +4,5 @@ in two different terminals.
 
 You can also play an interesting game in game.py. But unfortunately it has no proper UI.
 scrap.py is used for web scraping.
+
+snake_game.py is coded to run a simple snake game.
