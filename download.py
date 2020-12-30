@@ -55,4 +55,5 @@ entry.pack()
 
 root.mainloop()
 
-'''https://cdn.lynda.com/static/nonmember/images/client-logos/nbc.png'''
+'''Sample URL for test'''
+'''http://files3.lynda.com/secure/courses/718636/VBR_MP4h264_main_SD/718636_00_01_WX30_algorithms.mp4?N7DyA9MJgKxKhcDrFprFydA_QqZlZTfpEN_SXDEhQ8Pe2na3n85NWi8mdgHfDYPrCGl-u_dIFmYB5P6K5NkU76HdiL2EFwlz5VHjJhrns7O99INyjlvY7FHK19GsGNfB0MFAH0i7frikzFFqsM15mFTfNnBDp0UDl0O5mvnqy71SsTnuWZdnq3hY5SOP-pc&c3.ri=3779081631553525282'''
